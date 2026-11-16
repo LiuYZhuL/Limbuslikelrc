@@ -289,8 +289,9 @@ class LyricsOverlay(QWidget):
         """
 
         self.setWindowFlags(
-            Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Tool
+            Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint
         )
+        self.setWindowTitle("Limbuslikelrc Lyrics")
 
         self.setAttribute(Qt.WA_TranslucentBackground, True)
         self.setAttribute(Qt.WA_TransparentForMouseEvents, True)
